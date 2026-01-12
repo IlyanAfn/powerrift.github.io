@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Epita Bros - Site Officiel</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <style>
+        /* Un peu de personnalisation pour le côté "Jeu Vidéo" */
+        body { background-color: #111; color: #eee; }
+        header { padding: 2rem 0; text-align: center; border-bottom: 2px solid #d35400; }
+        h1 { color: #e67e22; }
+        .download-btn { background-color: #27ae60; border: none; width: 100%; margin-bottom: 1rem; }
+        .card { background: #222; padding: 1rem; border-radius: 8px; margin-bottom: 1rem; border: 1px solid #444; }
+    </style>
+</head>
+<body>
+
+    <header class="container">
+        <hgroup>
+            <h1>SUPER EPITA BROS</h1>
+            <h2>Le Platform Fighter nerveux codé en Python/Ursina</h2>
+        </hgroup>
+        <nav>
+            <ul>
+                <li><a href="#projet">Le Projet</a></li>
+                <li><a href="#equipe">L'Équipe</a></li>
+                <li><a href="#ressources">Ressources</a></li>
+                <li><a href="#telechargement" role="button">Télécharger</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <section id="projet">
+            <h2>🎮 Le Projet</h2>
+            <p>
+                Dans le cadre de notre première année à l'EPITA, nous avons réalisé un jeu de combat de type "Platform Fighter".
+                Inspiré de <em>Super Smash Bros</em> et <em>Brawlhalla</em>, le jeu permet à 4 joueurs de s'affronter en réseau local (LAN).
+            </p>
+            <div class="grid">
+                <article class="card">
+                    <header><strong>Moteur Physique</strong></header>
+                    Gestion des collisions et gravité personnalisée.
+                </article>
+                <article class="card">
+                    <header><strong>Réseau (LAN)</strong></header>
+                    Architecture Client-Serveur optimisée pour le 1v1 et 2v2.
+                </article>
+                <article class="card">
+                    <header><strong>Technologie</strong></header>
+                    Développé 100% en Python avec le moteur Ursina.
+                </article>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="equipe">
+            <h2>👥 L'Équipe (Groupe X - B1)</h2>
+            <p>Notre "entreprise fictive" est composée de 5 étudiants de première année :</p>
+            <div class="grid">
+                <div class="card">
+                    <strong>Toi (Moi)</strong><br>
+                    <em>Développeur Réseau & Web</em>
+                </div>
+                <div class="card">
+                    <strong>Membre 2</strong><br>
+                    <em>Développeur Physique</em>
+                </div>
+                <div class="card">
+                    <strong>Membre 3</strong><br>
+                    <em>Game Designer / Graphiste</em>
+                </div>
+                <div class="card">
+                    <strong>Membre 4</strong><br>
+                    <em>Développeur UI / Menus</em>
+                </div>
+                <div class="card">
+                    <strong>Membre 5</strong><br>
+                    <em>Chef de Projet / IA</em>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="ressources">
+            <h2>📚 Ressources & Bibliothèques</h2>
+            <ul>
+                <li><strong>Langage :</strong> Python 3.11</li>
+                <li><strong>Moteur de Jeu :</strong> <a href="https://www.ursinaengine.org/">Ursina Engine</a></li>
+                <li><strong>Réseau :</strong> UrsinaNetworking (Wrapper TCP/UDP)</li>
+                <li><strong>Assets Graphiques :</strong> [Citer vos sources ici, ex: Itch.io, ou "Fait maison"]</li>
+                <li><strong>Sons/Musiques :</strong> [Citer vos sources ici]</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section id="telechargement">
+            <h2>⬇️ Espace de Téléchargement</h2>
+            <p>Retrouvez ici les livrables pour la soutenance du 12 Janvier 2026.</p>
+            
+            <div class="grid">
+                <a href="./files/Rapport_Soutenance_1.pdf" target="_blank" role="button" class="download-btn">
+                    📄 Télécharger le Rapport de Soutenance (PDF)
+                </a>
+                
+                <a href="./files/Projet_SuperEpitaBros.zip" role="button" class="download-btn contrast">
+                    💾 Télécharger le Jeu (ZIP - Sources + Exécutable)
+                </a>
+            </div>
+            <small><em>Assurez-vous d'avoir Python installé pour lancer les sources.</em></small>
+        </section>
+
+    </main>
+
+    <footer class="container">
+        <small>
+            Projet Informatique EPITA 2026 - SAE J3D.<br>
+            Site réalisé pour la première soutenance.
+        </small>
+    </footer>
+
+</body>
+</html>
